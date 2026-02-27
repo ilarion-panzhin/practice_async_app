@@ -42,4 +42,4 @@ That reflection is where most learning happens.
 After installing .NET SDK:
 1. `dotnet run --project src/ConcurrencyLab -- sync-vs-async`
 2. Observe thread IDs before and after `await`.
-3. Compare total duration for sequential vs concurrent execution.
+3. Compare total duration for blocking `Thread.Sleep` vs async `Task.Delay` + `Task.WhenAll`.
